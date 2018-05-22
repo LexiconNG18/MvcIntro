@@ -1,0 +1,24 @@
+﻿@model MvcIntro.Models.TestModel
+@{
+    ViewBag.Title = "Test";
+}
+
+<h1>@ViewBag.Title</h1>
+<p>The test succeeded!</p>
+<p>@ViewBag.Message</p>
+<p>The model is @Model</p>
+
+@if (Model != null)
+{
+    <dl class="dl-horizontal">
+        <dt>Id: </dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Dag: </dt>
+        <dd>@Model.Dag</dd>
+
+        <dt>Humör: </dt>
+        <dd>@Model.Humör</dd>
+    </dl>
+
+}
